@@ -7,93 +7,124 @@
     <title>Veterinaria Premium-My Vet</title>
     <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
 </head>
 <body>
-    <nav class="botonera">
-        <a href="index.html" >
-            <img src="img/ms-icon-70x70.png" alt="Logo de My Vet">
-        </a>        
-        <ul>
-            
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="pages/turnos.html">Turnos</a>
-            </li>
-            <li>
-                <a href="pages/servicios.html">Servicios</a>
-            </li>
-            <li>
-                <a href="pages/contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="pages/tienda.html">Tienda</a>
-            </li>
-            <!-- links internos/dentro de la misma pagina -->
-            <li>
-                <a href="pages/perfil.html">Mi Cuenta</a>
-            </li>
-        </ul>
-        <!-- lista desordenada -->
 
-    </nav>
-    <!-- ends nav -->
-    <header class="cabecera__contenedor">
+<div id="contenedor_index">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark" style="background-color: #ffafe0;">
+        <div class="container-fluid">
+            <a href="index.html" >
+                <img src="img/ms-icon-70x70.png" alt="Logo de My Vet">
+            </a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="font-size:20px;">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pages/turnos.html">Turnos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/perfil.html">Mi Cuenta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <header class="cabecera__contenedor" id="header_index">
         <div class="cabecera__caja">
-            <h2 class="cabecera__titulo">Veterinaria My Vet</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum doloremque magnam similique at ullam dolor, voluptatem a nemo ipsa vero alias soluta adipisci corporis tenetur, culpa ducimus natus? Sapiente, maiores?</p>  
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque possimus necessitatibus aliquam eaque, perferendis, in tenetur rerum, fugit ipsum aperiam nam dolore ipsam eum? Commodi, quasi reprehenderit. Nobis, totam.</p>  
-            <button>Turnos</button> 
+            <h1 class="cabecera__titulo wow fadeIn" >VETERINARIA MY VET</h2> 
         </div>      
-        <img src="img/header.jpg" class="cabecera__caja" alt="Mascotas">
     </header>
+
+    <div id="slides">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/header.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+
     <!-- ends header -->
     <main>
-        <section class="equipo__fondo">
-            <div>
-                <img src="img/vet1.jpg" class="equipo__imagen" alt="Mascotas">
-                <img src="img/vet2.png" class="equipo__imagen" alt="Mascotas">
-                <img src="img/vet3.jpg" class="equipo__imagen" alt="Mascotas">
+        <div id="equipo">
+            <section class="equipo__fondo">
+                <div>
+                    <img src="img/vet1.jpg" class="equipo__imagen" alt="Mascotas">
+                    <img src="img/vet2.png" class="equipo__imagen" alt="Mascotas">
+                    <img src="img/vet3.jpg" class="equipo__imagen" alt="Mascotas">
+                </div>
+            </section>    
+            <div class="equipo__titulo wow fadeOut" id="equipo_titulo">
+                <h1 >Nuestro Equipo</h1>
+                <p class="info__datos text-white">Contamos con un equipo altamente calificado, capaz de atender las consultas mas complejas. Siempre atentos a brindad la mejor atencion posible</p> 
             </div>
-        </section>    
-        <div class="equipo__fondo__nombre">
-                <h2 class="equipo__nombre c1">Maria</h2>
-                <h2 class="equipo__nombre c2">Juan</h2>
-                <h2 class="equipo__nombre c3">Soledad</h2>
         </div>
-        <div class="equipo__fondo__puesto">
-            <h2 class="equipo__nombre c4">Veterinario</h2>
-            <h2 class="equipo__nombre c5">Veterinario</h2>
-            <h2 class="equipo__nombre c6">Veterinario</h2>
-        </div>
-        <div class="equipo__titulo">
-            <h1 >Nuestro Equipo</h1>
-            <p class="info__datos text-white">Contamos con un equipo altamente calificado, capaz de atender las consultas mas complejas. Siempre atentos a brindad la mejor atencion posible</p> 
-        </div>
-           
-        <!-- ends intro -->
-        <!-- ends equipo -->
-        <section class="info__contenedor">
-            <div class="info__caja">
-                <hr>
-                <p class="info__datos">Horarios de atencion: Lunes a Sabado de 09 a 18hs</p>  
-                <hr class="salto">
-                <p class="info__datos">Nos encontras en Savio 123</p>  
-                <hr class="salto">
-                <p class="info__datos">Telefono: 3398528479</p>  
-                <hr class="salto">
-                <p class="info__datos">Servicios de atencion personalizada, contamos con equipos de ultima tecnologia para realizar estudios de alta complejidad a tu mascota.</p>  
-                <hr>
+
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col" id="info">
+                <div class="info__caja" >
+                    <hr>
+                    <p class="info__datos">Horarios de atencion: Lunes a Sabado de 09 a 18hs</p>  
+                    <hr class="salto">
+                    <p class="info__datos">Nos encontras en Savio 123</p>  
+                    <hr class="salto">
+                    <p class="info__datos">Telefono: 3398528479</p>  
+                    <hr class="salto">
+                    <p class="info__datos">Servicios de atencion personalizada, contamos con equipos de ultima tecnologia para realizar estudios de alta complejidad a tu mascota.</p>  
+                    <hr>
+                </div>
             </div>
-            <iframe class="info__caja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.257712214121!2d-60.219794900000004!3d-33.3382164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767850a9850e9%3A0x62f3a7d39a405259!2sAv.%20Savio%20123%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671714014456!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe> 
+            <div class="col" id="mapa">
+                <iframe class="info__caja"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.257712214121!2d-60.219794900000004!3d-33.3382164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767850a9850e9%3A0x62f3a7d39a405259!2sAv.%20Savio%20123%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671714014456!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe> 
+            </div>
+        </div>
+    </div>
+
+
            
-        </section>
         <!-- ends horario y mapa -->
     </main>
     <!-- ends main-->
-    <footer class="pie">
+    <footer class="pie" id="pie">
         <p class="pie__texto" >Seguinos en nuestras redes</p>
         
         <!-- links absolutos -->
@@ -108,5 +139,13 @@
         </a>
         <p class="pie__texto" >2022-Candela Martinez</p>
     </footer>
+</div>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>

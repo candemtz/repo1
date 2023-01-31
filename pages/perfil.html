@@ -7,49 +7,109 @@
     <title>Mi Cuenta-My Vet</title>
     <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
 <body>
-    <nav class="botonera">
-        <a href="../index.html">
-            <img src="../img/ms-icon-70x70.png" alt="Logo de My Vet">
-        </a>
-        
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="turnos.html">Turnos</a>
-            </li>
-            <li>
-                <a href="servicios.html">Servicios</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="tienda.html">Tienda</a>
-            </li>
-            <li>
-                <a href="perfil.html">Mi Cuenta</a>
-            </li>
-        </ul>
-        <!-- lista desordenada -->
 
-    </nav>
-    <!-- ends nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ffafe0;">
+        <div class="container-fluid">
+            <a href="../index.html" >
+                <img src="../img/ms-icon-70x70.png" alt="Logo de My Vet">
+            </a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="font-size:20px;">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="turnos.html">Turnos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil.html">Mi Cuenta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <header>
         <h1 class="titulo">Mi cuenta</h1>
         
     </header>
     <!-- ends header -->
     <main>
+        <section class="vh-100" style="background-color: #ffafe0;">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-xl-10">
+                  <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                      <div class="col-md-6 col-lg-5 d-none d-md-block">
+                        <img src="../img/login.jpg"
+                          alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                      </div>
+                      <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5 text-black">
+          
+                          <form>
+          
+                            <div class="d-flex align-items-center mb-3 pb-1">
+                              <img class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"src="../img/ms-icon-70x70.png" alt="Logo de My Vet">
+                              <span class="h1 fw-bold mb-0">My Vet</span>
+                            </div>
+          
+                            <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Ingresa a tu cuenta</h5>
+          
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                              <label class="form-label" for="form2Example17">Email</label>
+                            </div>
+          
+                            <div class="form-outline mb-4">
+                              <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                              <label class="form-label" for="form2Example27">Contraseña</label>
+                            </div>
+          
+                            <div class="pt-1 mb-4">
+                              <button class="btn btn-dark btn-lg btn-block" type="button">Iniciar</button>
+                            </div>
+          
+                            <a class="small text-muted" href="#!">Olvidaste la contraseña?</a>
+                            <!-- <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
+                                style="color: #393f81;">Register here</a></p>
+                            <a href="#!" class="small text-muted">Terms of use.</a>
+                            <a href="#!" class="small text-muted">Privacy policy</a> -->
+                          </form>
+          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
         <!-- ends intro -->
-        <section class="info__contenedor">
+        <!-- <section class="info__contenedor">
             <article class="info__caja">
-                <!-- form -->
-                <form action="envio.php"> <!-- agarra la info y la manda a donde la usa -->
-                    <div class="cuenta">
+                
+                <form action="envio.php"> 
+                     <div class="cuenta">
                         <label for="user">Usuario:</label>
                         <input type="text" id="user">
                     </div>
@@ -60,7 +120,7 @@
                     <button class="cuenta">Iniciar</button>
                 </form>
             </article>
-        </section>
+        </section> -->
         
         <!-- ends contacto -->
     </main>
@@ -80,5 +140,10 @@
         </a>
         <p class="pie__texto" >2022-Candela Martinez</p>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
