@@ -1,0 +1,219 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+h1{
+    color: pink;
+    font-weight: $textRegular;
+    font-size: 3rem; 
+}
+
+p{
+    color: rgb(40, 34, 34);
+    font-weight: $textLigh;
+    font-size: 1.6rem;
+    line-height: 20px;  /* mas grande q el font size siempre */
+}
+
+.titulo{
+    text-align:center;
+    color:#e2b4b4;
+    background-color: indianred;
+}
+
+.info__datos{
+
+    font-size: 2rem;
+}
+
+.salto{
+    opacity: 0;
+    margin-bottom:9%;
+}
+
+.text-white{
+    color:white;
+}
+
+
+.pie{  
+    text-align: center;
+    background-color: indianred;
+    margin-top:10px ;
+    
+    
+}
+.pie__texto{
+    background-color: pink;
+    padding-top: 5px;
+}
+
+.pie__logo{
+    padding: 4px;
+    width:40px;
+    height:40px;
+    margin-top: 1px;
+}
+
+
+@media (min-width:280px) and (max-width:990px) {
+    
+    #mapa{
+        width:100%;
+        height:390px;
+       }
+
+    #aside{
+        display:none;
+    }
+	#contenedor_tienda{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto ;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "filtros"
+        "productos"
+        "pie";
+    }
+
+    #equipo .equipo__fondo{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #equipo .equipo__fondo img{
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+        width: 100%;
+	}
+
+    .info__datos{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    #contenedor_index{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto ;
+        grid-template-areas: 
+        "nav"
+        "header_index"
+        "slides"
+        "equipo"
+        "info"
+        "mapa"
+        "pie"
+        ;
+    }
+
+
+
+}
+
+@media (min-width:991px) and (max-width:1023px){
+    #aside{
+        display:none;
+    }
+    #contenedor_tienda{
+        display: grid;
+        grid-template-columns: 30% 70%; 
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav"
+        "header header "
+        "filtros productos"
+        "pie pie";
+    }
+}
+
+@media (min-width:1024px){
+    
+	#contenedor_tienda{
+        display: grid;
+        grid-template-columns: 20% 70% 10%; 
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "filtros productos icons"
+        "pie pie pie";
+	}
+
+    .info__datos{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+}
+
+/*--------------------------TIENDA-------------*/
+   #mainNav{
+    grid-area: nav;
+   }
+
+   #header_tienda{
+    grid-area: header;
+   }
+
+   #filtros{
+    grid-area: filtros;
+   }
+
+   #productos{
+    grid-area: productos;
+   }
+
+   #aside{
+    grid-area: icons;
+   }
+
+   #footer{
+    grid-area: pie;
+   }
+
+
+   
+/*-----------INDEX----------------- */
+
+#nav{
+    grid-area: nav;
+   }
+
+   #header_index{
+    grid-area: header_index;
+   }
+
+   #slides{
+    grid-area: slides;
+   }
+
+   #equipo{
+    grid-area: equipo;
+   }
+
+   #info{
+    grid-area: info;
+   }
+
+   #mapa{
+    grid-area: mapa;
+    width:100%;
+    height:390px;
+   }
+
+   #pie{
+    grid-area: pie;
+   }
+

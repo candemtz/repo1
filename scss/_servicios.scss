@@ -1,0 +1,23 @@
+.servicios__contenedor{
+    background-color: indianred;
+    padding: 20px;
+    display:flex;
+    flex-direction:row;
+    width: 97%;
+    margin-bottom: 10px;
+    align-content: center;
+    margin-right: 5%;
+    margin-top: 5px;
+    justify-content: space-around;
+}
+
+.servicios__caja{
+    color: rgb(40, 34, 34);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    width: 600px;
+    height: 400px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+}
