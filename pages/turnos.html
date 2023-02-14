@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnos-My Vet</title>
+    <title>My Vet-Solicita tu turno</title>
     <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/animate.css">
@@ -44,21 +44,28 @@
         </div>
       </nav>
 
-
+      <header class="cabecera__contenedor" id="header_index">
+        <div class="cabecera__caja">
+            <h1 class="cabecera__titulo wow fadeIn" >Turnos</h2> 
+        </div>      
+    </header>
 
     <!-- ends nav -->
     <div class="container text-center">
       <div class="row align-items-start">
           <div class="col" id="calend">
-            <iframe class="turnos__caja" src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23E67C73&ctz=America%2FArgentina%2FBuenos_Aires&src=Y2JtYXJ0aW5lejI3MTJAZ21haWwuY29t&src=ZmFtaWx5MDMyNDM1MTAzODU5NTExNjI3NjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%23616161" style="border:solid 1px #777" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+            <iframe id="calendario" class="turnos__caja" src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23E67C73&ctz=America%2FArgentina%2FBuenos_Aires&src=Y2JtYXJ0aW5lejI3MTJAZ21haWwuY29t&src=ZmFtaWx5MDMyNDM1MTAzODU5NTExNjI3NjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%23616161" style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
             
           </div>
           <div class="col" >
             <div class="turnos__caja" id="turno">
               <h2 class="cabecera__titulo">Solicita tu turno</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum doloremque magnam similique at ullam dolor, voluptatem a nemo ipsa vero alias soluta adipisci corporis tenetur, culpa ducimus natus? Sapiente, maiores?</p>  
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque possimus necessitatibus aliquam eaque, perferendis, in tenetur rerum, fugit ipsum aperiam nam dolore ipsam eum? Commodi, quasi reprehenderit. Nobis, totam.</p>  
-              <button>Turnos</button> 
+              <p>Horarios disponibles:</p>  
+              <p>15:00hs</p>  
+              <p>15:15hs</p>
+              <p>15:30hs</p>
+              <p>15:45hs</p>
+              <button type="button" class="btn btn-primary btn-lg">Confirmar turno</button>
           </div>   
           </div>
       </div>
